@@ -1,0 +1,431 @@
+/* ============ โทนสีและตัวแปรหลัก ============ */
+:root {
+  --bg-color: #121212;
+  --surface-color: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --accent-color: #8bb4f7;
+  --accent-hover: #aecbfb;
+  --border-color: #333333;
+}
+
+/* ============ ตั้งค่าพื้นฐาน ============ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ แถบนำทาง (Navbar) ============ */
+.navbar {
+  background-color: rgba(18, 18, 18, 0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ============ ส่วนเนื้อหา (Sections) ============ */
+.section {
+  padding: 80px 0;
+}
+
+.page-hero {
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.page-hero p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============ ปุ่ม (Buttons) ============ */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: #121212;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  color: #121212;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-color);
+  color: #121212;
+}
+
+/* ============ หน้าแรก (Home) ============ */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-card {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-card h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.eyebrow {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-role {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.hero-blurb {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-portrait {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+
+.portrait-frame {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--surface-color);
+  margin-bottom: 15px;
+}
+
+.portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-label {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skill-chip {
+  background-color: var(--surface-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+}
+
+/* ============ หน้า Travel ============ */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: var(--accent-color);
+  color: #121212;
+  border-color: var(--accent-color);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-media {
+  height: 200px;
+  overflow: hidden; 
+  background-color: #333;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-media img {
+  transform: scale(1.1);
+}
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* ============ หน้า Contact ============ */
+.contact-layout {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-card, .contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-card {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.field textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.field-error {
+  display: none;
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--surface-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid var(--border-color);
+}
+
+.form-status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4cd137;
+}
+
+/* ============ ส่วนท้าย (Footer) ============ */
+.site-footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* ============ แอนิเมชันตอนเลื่อนจอ (Scroll Reveal) ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============ มือถือ (Responsive) ============ */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--surface-color);
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
