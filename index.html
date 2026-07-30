@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bai Thi</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR (shared across all 3 pages) ============ -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">A.LEX</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="section">
+    <div class="container hero">
+      <div class="hero-card reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Alex</h1>
+        <p class="hero-role">Computer Science Student &middot; Nguyen Tat Thanh University</p>
+        <p class="hero-blurb">
+          Interested in web development and learning best by building real
+          projects — from frontend interfaces to full applications.
+        </p>
+        <div class="hero-actions">
+          <a href="travel.html" class="btn btn-primary">View Traval</a>
+          <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal">
+  <div class="portrait-frame">
+    <img src="imp/Phofli.jpeg" alt="Alex">
+  </div>
+  <p class="portrait-name">Alex</p>
+</div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-label">About</p>
+      <h2 class="section-title reveal">A bit about me</h2>
+      <p class="about-text reveal">
+        I'm a Computer Science student at <strong>Nguyen Tat Thanh University</strong>,
+        currently focused on front-end development — HTML, CSS and JavaScript.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title reveal">What I work with</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-chip">HTML</div>
+        <div class="skill-chip">CSS</div>
+        <div class="skill-chip">JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (shared across all 3 pages) ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Alex. Built for the WebDev mid-term assignment.</p>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

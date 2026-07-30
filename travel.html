@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel — Destinations | Alex</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">A.LEX</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">Destinations</h1>
+      <p class="reveal">Countries worth planning a trip to — carefully 
+        selected for their food, scenery, and lifestyle.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FILTER + DESTINATION GRID ============ -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+
+      <!-- Filtering by region is a simple, real piece of interactivity —
+           not decoration — since the destinations genuinely group that way -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="central">Asia</button>
+        <button class="filter-btn" data-filter="south">Europe</button>
+        <button class="filter-btn" data-filter="north">Americas</button>
+      </div>
+
+      <div class="project-grid reveal">
+
+<article class="card destination-card" data-region="central">
+  <div class="card-media">
+    <img src="imp/japan.jpeg" alt="Japan">
+  </div>
+  <div class="card-body">
+    <h3>Japan</h3>
+    <p>Japan seamlessly blends advanced technology with rich, traditional culture.
+
+Technology & Gaming Culture: It is a global hub for the gaming industry—spanning competitive shooters and open-world adventures—alongside a powerful pop culture with worldwide influence.
+
+Sports & Innovation: Renowned globally for producing high-quality, professional-grade sports equipment, especially badminton gear trusted and used by top-tier athletes.
+
+Quality of Life: Outstanding for its high level of safety, cleanliness, and an exceptionally punctual and efficient public transportation system.</p>
+  </div>
+</article>
+
+<article class="card destination-card" data-region="central">
+  <div class="card-media">
+    <img src="imp\singapore.jpeg" alt="Singapore">
+  </div>
+  <div class="card-body">
+    <h3>Singapore</h3>
+    <p>Singapore serves as a vital economic, technological, and educational hub in Asia.
+
+Business & Startups: Features a thriving ecosystem for entrepreneurs and startups, offering robust support for business planning and revenue model development.
+
+Financial & Capital Markets: Highly advanced in finance, housing leading financial institutions, active stock exchanges, and trading platforms.
+
+Innovation: Heavily invests in computer science and the development of digital infrastructure.</p>
+  </div>
+</article>
+
+<article class="card destination-card" data-region="north">
+  <div class="card-media">
+    <img src="imp\United States.jpeg" alt="United States">
+  </div>
+  <div class="card-body">
+    <h3>United States</h3>
+    <p>The United States is a dominant global leader in innovation and technology.
+
+AI & Computer Science: The birthplace and hub for cutting-edge AI, software development (such as C++), and advanced cryptography research.
+
+Political Theory & History: Features a vibrant political dynamic and rich history, making it an excellent case study for political concepts and theories.
+
+Diversity: Offers a vast landscape ranging from bustling global business hubs to breathtaking natural scenery.</p>
+  </div>
+</article>
+
+<article class="card destination-card" data-region="south">
+  <div class="card-media">
+    <img src="imp\Switzerland.jpeg" alt="Switzerland">
+  </div>
+  <div class="card-body">
+    <h3>Switzerland</h3>
+    <p>Switzerland is world-famous for its stability, peace, and exceptional quality of life.
+
+Stable Financial System: A global center for banking and investment, backed by a highly transparent and trusted financial system.
+
+Nature & Landscapes: Home to stunning views of the Swiss Alps and serene lakes, offering endless opportunities for exploring the great outdoors.
+
+Research & Development: Strongly prioritizes education and deep research across multiple fields, consistently ranking among the top countries in global innovation indices.</p>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Alex. Built for the WebDev mid-term assignment.</p>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
