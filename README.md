@@ -18,7 +18,7 @@ This is my Web Development mid-term project. It is a responsive personal portfol
 https://www.figma.com/design/9hJyoKSpRkKjgs4nT1yqBC/Untitled?node-id=0-1&t=GfqAn1Ue2aOaNgAJ-1
 
 ## Live Demo
-https://yourusername.github.io/Aphailath-Alek-2400009310
+https://lex851307-svg.github.io/Thi-gua-ky-Aphailath-Alek-2400009310/
 
 ## GitHub Repository
 https://github.com/lex851307-svg/Thi-gua-ky-Aphailath-Alek-2400009310
